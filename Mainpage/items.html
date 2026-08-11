@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | MLBB Wiki</title>
 
-    <link rel="stylesheet" href="../css/comingsoon.css">
+    <title>MLBB Wiki | Items</title>
+
+    <link rel="stylesheet" href="../css/items.css">
+
 </head>
 
 <body>
+
+    <!-- ================= NAVIGATION ================= -->
 
     <nav class="top-nav">
 
         <div class="nav-left">
 
             <a href="../index.html">Home</a>
-
             <a href="roles.html">Roles</a>
-
             <a href="heroes.html">Heroes</a>
-
             <a href="items.html" class="active">Items</a>
-
             <a href="emblems.html">Emblems</a>
-
             <a href="battlespells.html">Battle Spells</a>
 
         </div>
@@ -37,24 +37,114 @@
 
     </nav>
 
-    <section class="coming-page">
 
-        <img src="../images/homepage/mlbb_logo.jpg" class="logo">
+    <!-- ================= HERO ================= -->
 
-        <h1>Coming Soon</h1>
+    <section class="hero">
 
-        <p>
-            This section of the MLBB Wiki is currently under development.
-            More heroes, items, and detailed guides will be added in future updates.
-        </p>
+        <div class="overlay">
 
-        <a href="../index.html" class="home-btn">
-            ← Back to Home
-        </a>
+            <h1>ITEMS</h1>
+
+            <p>
+                Items provide heroes with additional attributes and unique effects
+                that can greatly influence their performance during a match.
+            </p>
+
+        </div>
 
     </section>
 
-    <script src="../js/auth.js"></script>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <nav class="breadcrumb">
+
+        <a href="../index.html">Home</a>
+
+        <span>/</span>
+
+        <span>Items</span>
+
+    </nav>
+
+
+    <!-- ================= OVERVIEW ================= -->
+
+    <section class="overview">
+
+        <h2>Overview</h2>
+
+        <p>
+            Items are equipment that heroes can purchase using Gold during a match.
+            They provide different attributes such as Physical Attack, Magic Power,
+            Defense, Movement Speed, and more. Choosing the right items depends on
+            the hero, role, and situation of the match.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CATEGORY TABS ================= -->
+
+    <section class="item-section">
+
+        <h2>Equipment</h2>
+
+        <div class="category-tabs">
+
+            <button class="category-tab active" data-category="all">
+                All
+            </button>
+
+            <button class="category-tab" data-category="attack">
+                Attack
+            </button>
+
+            <button class="category-tab" data-category="magic">
+                Magic
+            </button>
+
+            <button class="category-tab" data-category="defense">
+                Defense
+            </button>
+
+            <button class="category-tab" data-category="movement">
+                Movement
+            </button>
+
+            <button class="category-tab" data-category="jungle">
+                Jungling
+            </button>
+
+        </div>
+
+
+        <!-- ================= ITEM GRID ================= -->
+
+        <div id="item-grid" class="item-grid"></div>
+
+    </section>
+
+
+    <!-- ================= ITEM MODAL ================= -->
+
+    <div id="item-modal" class="item-modal">
+
+        <div class="modal-card">
+
+            <button id="close-modal" class="close-modal">
+                &times;
+            </button>
+
+            <div id="modal-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/items.js"></script>
 
 </body>
 
