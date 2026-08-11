@@ -25,3 +25,11 @@ function showEmblem(emblemId, button){
     button.classList.add("active");
 
 }
+
+function logout(){
+
+    localStorage.removeItem("loggedIn");
+
+    window.location.href="../login.html";
+
+}

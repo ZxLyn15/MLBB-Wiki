@@ -6,11 +6,11 @@ const roles = {
 
         description:"The Jungler clears neutral monsters, secures Turtle and Lord, and supports teammates through rotations and ganks.",
 
-        image:"images/roles/jungle.jpg",
+        image:"../images/roles/jungle.jpg",
 
         featured:"✓ Responsibilities\n✓ Objectives\n✓ Rotation Guide\n✓ Recommended Heroes\n✓ Battle Spell",
 
-        link:"roles/jungle.html"
+        link:"../Roles/jungle.html"
 
     },
 
@@ -20,11 +20,11 @@ const roles = {
 
         description:"The Mid Laner controls the center lane, clears waves quickly, and rotates to help every side of the map.",
 
-        image:"images/roles/mid.jpg",
+        image:"../images/roles/mid.jpg",
 
         featured:"✓ Wave Clear\n✓ Rotations\n✓ Recommended Heroes\n✓ Team Fights\n✓ Positioning",
 
-        link:"roles/mid.html"
+        link:"../Roles/mid.html"
 
     },
 
@@ -34,11 +34,11 @@ const roles = {
 
         description:"Gold Laners focus on farming safely and becoming the team's primary damage dealer in the late game.",
 
-        image:"images/roles/gold.jpg",
+        image:"../images/roles/gold.jpg",
 
         featured:"✓ Farming\n✓ Positioning\n✓ Gold Advantage\n✓ Recommended Heroes\n✓ Power Spikes",
 
-        link:"roles/gold.html"
+        link:"../Roles/gold.html"
 
     },
 
@@ -48,11 +48,11 @@ const roles = {
 
         description:"EXP Laners are durable fighters who gain extra experience and often initiate fights for the team.",
 
-        image:"images/roles/exp.jpg",
+        image:"../images/roles/exp.jpg",
 
         featured:"✓ Lane Control\n✓ Team Initiation\n✓ Recommended Heroes\n✓ Durability\n✓ Split Push",
 
-        link:"roles/exp.html"
+        link:"../Roles/exp.html"
 
     },
 
@@ -62,11 +62,11 @@ const roles = {
 
         description:"Roamers protect teammates, provide vision, and create opportunities through crowd control and map awareness.",
 
-        image:"images/roles/roam.jpg",
+        image:"../images/roles/roam.jpg",
 
         featured:"✓ Vision\n✓ Team Support\n✓ Initiation\n✓ Recommended Heroes\n✓ Map Control",
 
-        link:"roles/roam.html"
+        link:"../Roles/roam.html"
 
     }
 
@@ -117,3 +117,11 @@ button.addEventListener("click",()=>{
     }
 
 });
+
+function logout(){
+
+    localStorage.removeItem("loggedIn");
+
+    window.location.href="../login.html";
+
+}

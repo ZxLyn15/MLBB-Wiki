@@ -10,7 +10,7 @@ const pages = {
 
         featured:"✓ Jungle\n✓ Mid Lane\n✓ Gold Lane\n✓ EXP Lane\n✓ Roam",
 
-        link:"roles.html"
+        link:"Mainpage/roles.html"
 
     },
 
@@ -24,7 +24,7 @@ const pages = {
 
         featured:"✓ Hero Classes\n✓ Skills\n✓ Builds\n✓ Counters\n",
 
-        link:"heroes.html"
+        link:"Mainpage/heroes.html"
 
     },
 
@@ -38,7 +38,7 @@ const pages = {
 
         featured:"✓ Physical Items\n✓ Magic Items\n✓ Defense Items\n✓ Movement Items",
 
-        link:"items.html"
+        link:"Mainpage/items.html"
 
     },
 
@@ -52,7 +52,7 @@ const pages = {
 
         featured:"✓ Emblem Types\n✓ Talents\n✓ Recommended Setups\n✓ Role Synergies",
 
-        link:"emblems.html"
+        link:"Mainpage/emblems.html"
 
     },
 
@@ -66,7 +66,7 @@ const pages = {
 
         featured:"✓ Spell Effects\n✓ Cooldowns\n✓ Best Uses\n✓ Spell Mechanics",
 
-        link:"spells.html"
+        link:"Mainpage/battlespells.html"
 
     },
 
@@ -114,3 +114,21 @@ button.addEventListener("click",()=>{
     }
 
 });
+
+/* ================= LOGOUT ================= */
+
+function logout() {
+
+    localStorage.removeItem("loggedIn");
+
+    window.location.href = "login.html";
+
+}
+
+function logout(){
+
+    localStorage.removeItem("loggedIn");
+
+    window.location.href="../login.html";
+
+}

@@ -21,16 +21,102 @@ strong{
     color:gold;
 }
 
+/* ================= NAVIGATION ================= */
+
+.top-nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:2000;
+
+    background:#1b1b1b;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 60px;
+
+    border-bottom:1px solid rgba(255,215,0,.15);
+
+    box-shadow:0 2px 8px rgba(0,0,0,.35);
+
+}
+
+.nav-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.nav-right{
+
+    margin-left:auto;
+
+}
+
+.top-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    padding-bottom:6px;
+
+    transition:.25s;
+
+}
+
+.top-nav a:hover{
+
+    color:gold;
+
+    transform:translateY(-2px);
+
+}
+
+.top-nav a.active{
+
+    color:gold;
+
+    font-weight:bold;
+
+    border-bottom:3px solid gold;
+
+}
+
 /* ================= HERO ================= */
 
 .hero{
 
-    height:50vh;
+    height:100vh;
 
-    background:url("../images/battle-spells/banner.jpg");
     background-size:cover;
-    background-position:center;
 
+    background-position:top;
+
+    padding:0 0;
+
+}
+
+.logo{
+    width:45%;
+    
+    max-width:100%;
+    
+    display:block;
+
+    margin-bottom:30px;
 }
 
 .overlay{
@@ -102,6 +188,46 @@ strong{
 
 }
 
+.breadcrumb-arrow{
+    font-size: 16px;
+    color: #888;
+    vertical-align: middle;
+    margin: 0 8px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+
+    margin-top:40px;
+
+    padding:15px 40px;
+
+    background:gold;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:transform .3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
 /* ================= COMMON ================= */
 
 section{
@@ -126,31 +252,92 @@ section h2{
 
 }
 
-/* ================= SPELL LIST ================= */
+/* ================= SPELL SELECTOR ================= */
 
-.spell-list{
+.spell-selector{
 
-    display:flex;
-    flex-direction:column;
-    gap:25px;
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
 
 }
 
-/* ================= SPELL CARD ================= */
-
-.spell{
+.spell-tab{
 
     background:#202020;
-    border-radius:20px;
-    overflow:hidden;
-    transition:.3s ease;
+
+    border:none;
+
+    border-radius:18px;
+
+    color:white;
+
+    cursor:pointer;
+
+    padding:22px;
+
+    transition:.3s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:12px;
 
 }
 
-.spell.active{
+.spell-tab:hover{
 
-    background:#252525;
+    transform:translateY(-6px);
 
+    background:#2b2b2b;
+
+}
+
+.spell-tab.active{
+
+    border:2px solid gold;
+
+    color:gold;
+
+}
+
+.spell-tab img{
+
+    width:65px;
+
+}
+
+.spell-tab span{
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
+
+.spell-page{
+    display:none;
+    animation:fade .3s ease;
+}
+
+.active-page{
+    display:block;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 /* ================= HEADER ================= */
@@ -239,48 +426,22 @@ section h2{
 
 }
 
-.spell.active .spell-content{
-
-    max-height:5000px;
-
-    opacity:1;
-
-    padding:40px;
-
+.spell-content{
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    padding:0 40px;
+    transition:
+        max-height .5s ease,
+        opacity .3s ease,
+        padding .3s ease;
 }
-
-.spell.active .arrow{
-
-    transform:rotate(180deg);
-
-}
-
-/* ================= ICON ================= */
 
 .spell-icon{
-
     width:130px;
-
     display:block;
-
     margin:auto;
-
     margin-bottom:20px;
-
-    opacity:0;
-
-    transform:scale(.9);
-
-    transition:.35s ease;
-
-}
-
-.spell.active .spell-icon{
-
-    opacity:1;
-
-    transform:scale(1);
-
 }
 
 .spell-content h2{
@@ -410,6 +571,26 @@ section h2{
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:900px){
+
+.top-nav{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:18px;
+
+}
+
+.nav-left{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
 
 section{
 

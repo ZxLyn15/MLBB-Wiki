@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MLBB Wiki | Battle Spells</title>
+
+    <link rel="stylesheet" href="../css/battlespells.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+
+
+</head>
+
+<body>
+
+    <nav class="top-nav">
+
+        <div class="nav-left">
+
+            <a href="../index.html">Home</a>
+
+            <a href="roles.html">Roles</a>
+
+            <a href="heroes.html">Heroes</a>
+
+            <a href="items.html">Items</a>
+
+            <a href="emblems.html">Emblems</a>
+
+            <a href="battlespells.html" class="active">Battle Spells</a>
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#" onclick="logout()">Logout</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <img src="../images/battlespells/allspells-logo2.png" alt="Battle Spells Logo" class="logo">
+            <h1>BATTLE SPELLS</h1>
+            <p>
+
+                Battle Spells are special abilities that every hero can equip before a match.
+                Choosing the right spell can improve mobility, survivability, damage, or utility.
+
+            </p>
+
+            <a href="#main" class="btn">
+
+                Explore Battle Spells
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <nav class="breadcrumb">
+
+        <a href="../index.html">Home</a>
+
+        <span class="material-symbols-outlined breadcrumb-arrow">
+            arrow_forward_ios
+        </span>
+
+        <span>Battle Spells</span>
+
+    </nav>
+
+    <!-- ================= OVERVIEW ================= -->
+
+    <section class="overview" id="main">
+
+        <h2>Overview</h2>
+
+        <p>
+
+            Battle Spells provide heroes with additional abilities that can greatly
+            influence the outcome of a match. Every spell has its own unique purpose,
+            ranging from dealing damage and escaping danger to supporting allies and
+            controlling objectives. Selecting the appropriate spell depends on the
+            hero, role, and overall team strategy.
+            <br>
+            Players can equip a Battle Spell before the start of a match. Mastering Battle Spells makes the player much
+            stronger. Spells are something that the player can use as an additional ability for their hero in-game. A
+            player can select one battle spell while in the pregame lobby. They cannot be reset or changed once the
+            match has begun.
+
+        </p>
+
+    </section>
+
+    <!-- ================= SPELL LIST ================= -->
+
+    <section class="spell-selector">
+
+        <!-- Execute -->
+
+        <button class="spell-tab active" data-target="execute">
+            <img src="../images/battlespells/execute.png">
+            <span>Execute</span>
+        </button>
+
+        <!-- Retribution -->
+
+        <button class="spell-tab" data-target="retribution">
+            <img src="../images/battlespells/retribution.png">
+            <span>Retribution</span>
+        </button>
+
+        <!-- Inspire -->
+
+        <button class="spell-tab" data-target="inspire">
+            <img src="../images/battlespells/inspire.png">
+            <span>Inspire</span>
+        </button>
+
+        <!-- Sprint -->
+
+        <button class="spell-tab" data-target="sprint">
+            <img src="../images/battlespells/sprint.png">
+            <span>Sprint</span>
+        </button>
+
+        <!-- Revitalize -->
+
+        <button class="spell-tab" data-target="revitalize">
+            <img src="../images/battlespells/revitalize.png">
+            <span>Revitalize</span>
+        </button>
+
+        <!-- Aegis -->
+
+        <button class="spell-tab" data-target="aegis">
+            <img src="../images/battlespells/aegis.png">
+            <span>Aegis</span>
+        </button>
+
+        <!-- Petrify -->
+
+
+        <button class="spell-tab" data-target="petrify">
+            <img src="../images/battlespells/petrify.png">
+            <span>Petrify</span>
+        </button>
+
+        <!-- Purify -->
+
+        <button class="spell-tab" data-target="purify">
+            <img src="../images/battlespells/purify.png">
+            <span>Purify</span>
+        </button>
+
+        <!-- Flameshot -->
+
+
+        <button class="spell-tab" data-target="flameshot">
+            <img src="../images/battlespells/flameshot.png">
+            <span>Flameshot</span>
+        </button>
+
+        <!-- Flicker -->
+
+        <button class="spell-tab" data-target="flicker">
+            <img src="../images/battlespells/flicker.png">
+            <span>Flicker</span>
+        </button>
+
+        <!-- Arrival -->
+
+        <button class="spell-tab" data-target="arrival">
+            <img src="../images/battlespells/arrival.png">
+            <span>Arrival</span>
+        </button>
+
+        <!-- Vengeance -->
+
+        <button class="spell-tab" data-target="vengeance">
+            <img src="../images/battlespells/vengeance.png">
+            <span>Vengeance</span>
+        </button>
+
+    </section>
+
+    <section class="spell-pages">
+
+        <!-- Execute -->
+
+        <div class="spell-page active-page" id="execute">
+
+            <img class="spell-icon" src="../images/battlespells/execute.png" alt="Execute Icon">
+
+            <h2>Execute</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>90 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Low HP Execution</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 1</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Base Damage</h3>
+
+                    <p>110 / 120 / 130 / 140 / 150 / 160 / 170 / 180 / 190 / 200 / 210 / 220 / 230 / 240 / 250</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Deals 100 (+10 x Hero Level) (+enemy's 13% Lost HP) True Damage to the designated enemy hero.
+                This damage ignores shield. If the target is slain by this skill, its cooldown will be reduced by
+                40%.
+
+            </p>
+
+        </div>
+
+        <!-- Retribution -->
+
+        <div class="spell-page" id="retribution">
+
+            <img class="spell-icon" src="../images/battlespells/retribution.png" alt="Retribution Icon">
+
+            <h2>Retribution</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>35 Seconds</p>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Jungle Special</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 3</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Base Damage</h3>
+
+                    <p>110 / 120 / 130 / 140 / 150 / 160 / 170 / 180 / 190 / 200 / 210 / 220 / 230 / 240 / 250</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Deals 750 (+150 × Hero Level) True Damage to creeps and minions.
+                <br>
+                <strong>Passive:</strong> Creep rewards are increased by 60%, and reduces damage taken
+                from basic creeps is
+                reduced by 40%. Cannot share minion rewards withh allied heroesfor the first 2 minutes.
+                <br>
+                <strong>Blessing:</strong> Reach 5 creep kills, hero kills, or hero kill assists
+                to level up this
+                skill (the skill decided by the Blessing of the Jungling Footwear purchased). Reaching 15 increases
+                Physical Attack and Magic Power by 15.
+
+            </p>
+
+            <h3>Retribution Variants</h3>
+
+            <p class="variant-intro">
+                After purchasing a Jungling Blessing, Retribution evolves into one of
+                three variants depending on the blessing selected.
+            </p>
+
+            <div class="variant-grid">
+
+                <div class="variant-card">
+
+                    <img src="../images/battlespells/ice-retribution.png" alt="Ice Retribution">
+
+                    <h4>Ice Retribution</h4>
+
+                    <p>
+                        When cast on an enemy hero, deals 100 True
+                        Damage and steals 52-80 Movement Speed (scales with
+                        level) for 3s.
+                    </p>
+
+                </div>
+
+                <div class="variant-card">
+
+                    <img src="../images/battlespells/flame-retribution.png" alt="Flame Retribution">
+
+                    <h4>Flame Retribution</h4>
+
+                    <p>
+                        When cast on an enemy hero, deals 100 True
+                        Damage and steals 71-120 Physical Attack and Magic
+                        Power (scales with level) for 3s.
+                    </p>
+
+                </div>
+
+                <div class="variant-card">
+
+                    <img src="../images/battlespells/bloody-retribution.png" alt="Bloody Retribution">
+
+                    <h4>Bloody Retribution</h4>
+
+                    <p>
+                        When cast on an enemy hero, deals 100 True
+                        Damage and steals HP equal to 300 + 24% of the caster's
+                        extra HP for 3s.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Inspire -->
+
+        <div class="spell-page" id="inspire">
+
+            <img class="spell-icon" src="../images/battlespells/inspire.png" alt="Inspire Icon">
+
+            <h2>Inspire</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>75 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Enhanced Basic Attacks</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 5</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                For up to 6 Basic Attack Basic Attacks within the next 5 seconds, increase Attack Speed to 1.5 times
+                and the Attack Speed cap to 500%.
+                <br>
+                The Basic Attacks also ignore 8(+1*Hero Level) of target's Hybrid Defense and restore 60 (+15% Total
+                Physical Attack) (+10% Total Magic Power) HP on hit.
+
+            </p>
+
+        </div>
+
+        <!-- Sprint -->
+
+        <div class="spell-page" id="sprint">
+
+            <img class="spell-icon" src="../images/battlespells/sprint.png" alt="Sprint Icon">
+
+            <h2>Sprint</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>100 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Long Lasting Speed Up</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 7</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Gains up to 50% extra Movement Speed and slow immunity for 6s. The extra Movement Speed gradually
+                decays after 2s
+
+            </p>
+
+        </div>
+
+        <!-- Revitalize -->
+
+        <div class="spell-page" id="revitalize">
+
+            <img class="spell-icon" src="../images/battlespells/revitalize.png" alt="Revitalize Icon">
+
+            <h2>Revitalize</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>75 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Large AOE Heal</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 9</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Summons a Healing Spring that restores 2.5% Max HP every 0.5 second for 5 seconds (maximum of 25%
+                Max HP).
+                <br>
+                Increases the Shield and HP Regen by 25% for allies within the area of effect (this effect is cannot
+                be stacked up).
+
+            </p>
+
+        </div>
+
+        <!-- Aegis -->
+
+        <div class="spell-page" id="aegis">
+
+            <img class="spell-icon" src="../images/battlespells/aegis.png" alt="Aegis Icon">
+
+            <h2>Aegis</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>90 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Shield & Crowd Control Immunity</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 11</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Grants a shield that absorbs 300 (+50% Total Magic Power) damage for 2s and grants Crowd Control
+                Immunity for 1.5s.
+
+            </p>
+
+        </div>
+
+        <!-- Petrify -->
+
+        <div class="spell-page" id="petrify">
+
+            <img class="spell-icon" src="../images/battlespells/petrify.png" alt="Petrify Icon">
+
+            <h2>Petrify</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>90 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Crowd Control</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 13</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Stuns the target enemy hero for 1.5s and deals 200 (+50% Total Magic Power) Magic Damage.
+
+            </p>
+
+        </div>
+
+        <!-- Purify -->
+
+        <div class="spell-page" id="purify">
+
+            <img class="spell-icon" src="../images/battlespells/purify.png" alt="Purify Icon">
+
+            <h2>Purify</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>120 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Crowd Control Immunity</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 15</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Removes all debuffs and Crowd Control effects from the caster and grants Crowd Control Immunity for
+                1.5s.
+
+            </p>
+
+        </div>
+
+        <!-- Flameshot -->
+
+        <div class="spell-page" id="flameshot">
+
+            <img class="spell-icon" src="../images/battlespells/flameshot.png" alt="Flameshot Icon">
+
+            <h2>Flameshot</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>90 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Long-Range Damage</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 17</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Fires a flame projectile in the target direction, dealing 300 (+50% Total Magic Power) Magic Damage to
+                the first enemy hit and knocking them back. The knockback distance is increased by 50% if the target is
+                a hero.
+
+            </p>
+
+        </div>
+
+        <!-- Flicker -->
+
+        <div class="spell-page" id="flicker">
+
+            <img class="spell-icon" src="../images/battlespells/flicker.png" alt="Flicker Icon">
+
+            <h2>Flicker</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>120 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Short-Range Teleport</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 19</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Teleports the caster to a target location within 4.5m.
+
+            </p>
+
+        </div>
+
+        <!-- Arrival -->
+
+        <div class="spell-page" id="arrival">
+
+            <img class="spell-icon" src="../images/battlespells/arrival.png" alt="Arrival Icon">
+
+            <h2>Arrival</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>120 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Teleport to Base</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 21</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Teleports the caster to the base. The caster can move and attack while channeling this skill.
+
+            </p>
+
+        </div>
+
+        <!-- Vengeance -->
+
+        <div class="spell-page" id="vengeance">
+
+            <img class="spell-icon" src="../images/battlespells/vengeance.png" alt="Vengeance Icon">
+
+            <h2>Vengeance</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+
+                    <h3>Cooldown</h3>
+
+                    <p>120 Seconds</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Type</h3>
+
+                    <p>Damage Reflection</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Unlock Level</h3>
+
+                    <p>Level 23</p>
+
+                </div>
+
+            </div>
+
+            <h3>Description</h3>
+
+            <p>
+
+                Reflects 30% of the damage received from enemy heroes for 4s. The reflected damage is considered
+                Physical Damage.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="../js/auth.js"></script>
+
+    <script src="../js/battlespells.js"></script>
+
+</body>
+
+</html>

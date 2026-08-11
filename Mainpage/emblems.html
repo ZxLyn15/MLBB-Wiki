@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MLBB Wiki | Emblems</title>
+
+    <link rel="stylesheet" href="../css/emblems.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
+
+</head>
+
+<body>
+
+    <nav class="top-nav">
+
+        <div class="nav-left">
+
+            <a href="../index.html">Home</a>
+
+            <a href="roles.html">Roles</a>
+
+            <a href="heroes.html">Heroes</a>
+
+            <a href="items.html">Items</a>
+
+            <a href="emblems.html" class="active">Emblems</a>
+
+            <a href="battlespells.html">Battle Spells</a>
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#" onclick="logout()">Logout</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <img src="../images/emblems/all-emblems-notext.png" alt="emblems Logo" class="logo">
+            <h1>EMBLEMS</h1>
+
+            <p>
+
+                Emblems are hero enhancements that grant additional buffs or effects as well as bonus attributes. In the
+                preparation tab or during the hero pick phase, players can choose their preferred emblem sets.
+                Currently, there are 7 types of emblems, each with its own set of bonuses.
+                <br>
+                <br>
+                Standard talents and core talents are the two of talents. Players can choose additional effects for
+                their chosen hero via talents, providing them with an advantage with the suitable configurations;
+                however, they can only choose two standard talents and one core talent. Currently, there are 16 types of
+                standard talents and 8 types of core talents, each with its own set of bonuses.
+
+            </p>
+
+            <a href="#main" class="btn">
+
+                Explore Emblems
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <nav class="breadcrumb">
+
+        <a href="../index.html">Home</a>
+
+        <span class="material-symbols-outlined breadcrumb-arrow">
+            arrow_forward_ios
+        </span>
+
+        <span>Emblems</span>
+
+    </nav>
+
+    <!-- ================= EMBLEM SELECTOR ================= -->
+    <section id="main">
+
+        <section class="selector">
+
+            <button class="tab active" onclick="showEmblem('common', this)">
+
+                <img src="../images/emblems/emblem-main/common-emblem.png">
+
+                Basic Common
+
+            </button>
+
+            <button class="tab" onclick="showEmblem('tank', this)">
+
+                <img src="../images/emblems/emblem-main/tank-emblem.png">
+
+                Tank
+
+            </button>
+
+            <button class="tab" onclick="showEmblem('assassin', this)">
+
+                <img src="../images/emblems/emblem-main/assassin-emblem.png">
+
+                Assassin
+
+            </button>
+
+            <button class="tab" onclick="showEmblem('mage', this)">
+
+                <img src="../images/emblems/emblem-main/mage-emblem.png">
+
+                Mage
+
+            </button>
+
+            <button class="tab" onclick="showEmblem('fighter', this)">
+
+                <img src="../images/emblems/emblem-main/fighter-emblem.png">
+
+                Fighter
+
+            </button>
+
+            <button class="tab" onclick="showEmblem('support', this)">
+
+                <img src="../images/emblems/emblem-main/support-emblem.png">
+
+                Support
+
+            </button>
+
+            <button class="tab" onclick="showEmblem('marksman', this)">
+
+                <img src="../images/emblems/emblem-main/marksman-emblem.png">
+
+                Marksman
+
+            </button>
+
+        </section>
+
+    </section>
+    <!-- ================= COMMON ================= -->
+
+    <section id="common" class="emblem-page active-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/common-emblem.png">
+
+            <h2>Common Emblem</h2>
+
+            <p class="description"> An balanced emblem that provides Adaptive Attack, HP, and Hybrid Regen. It is
+                suitable for a wide variety of heroes and serves as a flexible option when no specialized emblem is
+                needed.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    Hybrid Regen
+
+                    <span>+12.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    HP
+
+                    <span>+275.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Adaptive Attack
+
+                    <span>+22.00</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/thrill1.png">
+
+                    <h4>Thrill</h4>
+
+                    <p class="description-talent">+16 Adaptive Attack</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/swift1.png">
+
+                    <h4>Swift</h4>
+
+                    <p class="description-talent">+10% Attack Speed</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/wilderness-blessing.png">
+
+                    <h4>Wilderness Blessing</h4>
+
+                    <p class="description-talent">+10% move speed in jungle/river <br> (halved in hero combat)</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/seasoned-hunter.png">
+
+                    <h4>Seasoned Hunter</h4>
+
+                    <p class="description-talent">+15% damage to Lord/Turtle <br> (halved vs creeps)</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/impure-rage.png">
+
+                    <h4>Impure Rage</h4>
+
+                    <p class="description-talent">Dealing damage with skills deals 4% of target's Max HP extra Adaptive
+                        Damage and restores 2% Mana on hit. (If the hero does not use Mana, restores 1% HP instead). The
+                        extra Adaptive Damage dealt to non-hero units is up to 120. Cooldown: 5 seconds.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/quantum-charge.png">
+
+                    <h4>Quantum Charge</h4>
+
+                    <p class="description-talent">Dealing damage with Basic Attacks increases Movement Speed by 30% for
+                        1.5s and restores 75-180 HP (scales with level). Cooldown: 10 seconds.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/temporal-reign.png">
+
+                    <h4>Temporal Reign</h4>
+
+                    <p class="description-talent">Dealing damage with skills reduces the target's Movement Speed by 30%
+                        for 1.5s and restores 75-180 HP (scales with level). Cooldown: 10 seconds.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/common/war-cry.png">
+
+                    <h4>War Cry</h4>
+
+                    <p class="description-talent">The next Ultimate cast decreases other active skills' remaining
+                        cooldowns by 1.5 times within 4 seconds. This effect is extended by 2 seconds after getting hero
+                        kills or assists. (This only applies to the hero themselves. Cooldown: 20 seconds.)</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TANK ================= -->
+
+    <section id="tank" class="emblem-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/tank-emblem.png">
+
+            <h2>Tank Emblem</h2>
+
+            <p class="description"> An defensive emblem that provides high HP, Armor, and Magic Resistance. It is ideal
+                for heroes who need to absorb damage and control fights.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    HP
+
+                    <span>+500</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Hybrid Defense
+
+                    <span>+10.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Hybrid Regen
+
+                    <span>+04.00</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/tank/vitality.png">
+
+                    <h4>Vitality</h4>
+
+                    <p class="description-talent">Gain 225 extra max HP</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/tank/tenacity.png">
+
+                    <h4>Tenacity</h4>
+
+                    <p class="description-talent">When HP is below 50%, Damage Reduction is increased by 5%.</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/tank/concussive-blast.png">
+
+                    <h4>Concussive Blast</h4>
+
+                    <p class="description-talent">After the next Basic Attack, deal 100(+7% Total HP) Magic Damage to
+                        nearby enemies. Cooldown: 15s.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ASSASSIN ================= -->
+
+    <section id="assassin" class="emblem-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/assassin-emblem.png">
+
+            <h2>Assassin Emblem</h2>
+
+            <p class="description"> An emblem made for heroes that relies on dealing high damage, either from suprise
+                attacks, ambushes, or pure burst damage to eliminate targets.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    Adaptive Penetration
+
+                    <span>+14.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Adaptive Attack
+
+                    <span>+10.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Movement Speed
+
+                    <span>+03%</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/assassin/rupture.png">
+
+                    <h4>Rupture</h4>
+
+                    <p class="description-talent">Gain 5 Adaptive Penetration. Gain Physical Penetration if extra
+                        Physical Attack is higher than extra Magic Power; otherwise, gain Magic Penetration.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/assassin/master_assassin.png">
+
+                    <h4>Master Assassin</h4>
+
+                    <p class="description-talent">If there is only one enemy hero nearby, damage dealt to them is
+                        increased by 7%.</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/assassin/killing-spree.png">
+
+                    <h4>Killing Spree</h4>
+
+                    <p class="description-talent">When damaging heroes below 30% HP, instantly recover 15% of Lost HP
+                        and gains 20% Movement Speed. Additional Effect: Reset cooldown upon killing an enemy hero.
+                        Duration: 3 seconds. Cooldown: 30 seconds.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAGE ================= -->
+
+    <section id="mage" class="emblem-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/mage-emblem.png">
+
+            <h2>Mage Emblem</h2>
+
+            <p class="description"> An emblem made for magical heroes that rely on dealing high magical damage, either
+                through their abilities, or burst damage to eliminate targets.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    Magic Power
+
+                    <span>+30.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Cooldown Reduction
+
+                    <span>+05%</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Magic Penetration
+
+                    <span>+08.00</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/mage/inspire.png">
+
+                    <h4>Inspire</h4>
+
+                    <p class="description-talent">Cooldown Reduction is increased by 5% and Mana Regen by 2.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/mage/bargain-hunter.png">
+
+                    <h4>Bargain Hunter</h4>
+
+                    <p class="description-talent">Equipment can be purchased at 95% of their base price.</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/mage/lethal-ignition.png">
+
+                    <h4>Lethal Ignition</h4>
+
+                    <p class="description-talent">Dealing damage greater than 7% of an enemy hero's Max HP 3 times
+                        within 5s will scorch the target for an additional 162-750 Adaptive Damage (scales with level).
+                        Cooldown 15 seconds.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FIGHTER ================= -->
+
+    <section id="fighter" class="emblem-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/fighter-emblem.png">
+
+            <h2>Fighter Emblem</h2>
+
+            <p class="description"> An emblem made for heroes that rely on sustaining damage and engaging in close
+                combat, while still providing good damage and still have defensive capabilities.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    Hybrid Lifesteal
+
+                    <span>+10%</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Adaptive Attack
+
+                    <span>+16.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Hybrid Defense
+
+                    <span>+08.00</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/fighter/firmness.png">
+
+                    <h4>Firmness</h4>
+
+                    <p class="description-talent">Gain 8 extra Physical & Magic Defense.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/fighter/festival-of-blood.png">
+
+                    <h4>Festival of Blood</h4>
+
+                    <p class="description-talent">Gain 6% Spell Vamp. Each hero kill or assist grants an additional 0.5%
+                        Spell Vamp, up to 12 stacks.</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/fighter/brave-smite.png">
+
+                    <h4>Brave Smite</h4>
+
+                    <p class="description-talent">Dealing skill damage to an enemy hero recovers 5% Max HP. CD: 6
+                        seconds.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SUPPORT ================= -->
+
+    <section id="support" class="emblem-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/support-emblem.png">
+
+            <h2>Support Emblem</h2>
+
+            <p class="description"> An emblem made for heroes that rely on supporting their teammates and controlling
+                the battlefield, while still providing defensive capabilities for themselves.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    Healing Effect
+
+                    <span>+12%</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Cooldown Reduction
+
+                    <span>+10%</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Movement Speed
+
+                    <span>+06%</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/support/agility.png">
+
+                    <h4>Agility</h4>
+
+                    <p class="description-talent">Gain 4% extra Movement Speed.
+                    </p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/support/pull-yourself-together.png">
+
+                    <h4>Pull Yourself Together</h4>
+
+                    <p class="description-talent">Cooldowns of Battle Spells and equipment's active skills are reduced
+                        by 12% initially. Each hero kill or assist grants an additional 1% reduction, up to 8 stacks.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/support/focusing-mark.png">
+
+                    <h4>Focusing Mark</h4>
+
+                    <p class="description-talent">After damaging an enemy hero, allied heroes deal 6% more damage to
+                        them and gain 10% Movement Speed. Duration: 3 seconds. Cooldown: 4 seconds.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= MARKSMAN ================= -->
+
+    <section id="marksman" class="emblem-page">
+
+        <div class="emblem-card">
+
+            <img class="main-icon" src="../images/emblems/emblem-main/marksman-emblem.png">
+
+            <h2>Marksman Emblem</h2>
+
+            <p class="description"> An emblem made for primarily marksmans heroes that rely on their basic attacks to
+                deal high damage and increase their attack speed.</p>
+
+            <hr>
+
+            <h3>Attributes</h3>
+
+            <div class="attribute-grid">
+
+                <div class="attribute">
+
+                    Attack Speed
+
+                    <span>+15%</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Adaptive Attack
+
+                    <span>+16.00</span>
+
+                </div>
+
+                <div class="attribute">
+
+                    Adaptive Penetration
+
+                    <span>+10%</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Standard Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/marksman/fatal.png">
+
+                    <h4>Fatal</h4>
+
+                    <p class="description-talent">Gain 5% Crit Chance and 5% extra Crit Damage.</p>
+
+                </div>
+
+                <div class="talent">
+
+                    <img src="../images/emblems/marksman/weapon-master.png">
+
+                    <h4>Weapons Master</h4>
+
+                    <p class="description-talent">Physical Attack and Magic Power gained from equipment, emblem,
+                        talents, and skills are increased by 8%.</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h3>Core Talents</h3>
+
+            <div class="talent-grid">
+
+                <div class="talent">
+
+                    <img src="../images/emblems/marksman/weakness-finder.png">
+
+                    <h4>Weakness Finder</h4>
+
+                    <p class="description-talent">Basic Attacks slow enemies by 50% and reduce their Attack Speed by
+                        30%. Duration: 1 second. Cooldown: 10 seconds (each Basic Attack reduces it by 1 seconds, down
+                        to 3 seconds).
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="../js/auth.js"></script>
+
+    <script src="../js/emblems.js"></script>
+
+</body>
+
+</html>

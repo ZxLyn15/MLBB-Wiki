@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MLBB Wiki</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="top-nav">
+
+        <div class="nav-left">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="Mainpage/roles.html">Roles</a>
+
+            <a href="Mainpage/heroes.html">Heroes</a>
+
+            <a href="Mainpage/items.html">Items</a>
+
+            <a href="Mainpage/emblems.html">Emblems</a>
+
+            <a href="Mainpage/battlespells.html">Battle Spells</a>
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#" onclick="logout()">Logout</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <img src="images/homepage/mlbb_logo.jpg" alt="MLBB Logo" class="logo">
+
+            <p>
+
+                Learn heroes, roles, items, emblems,
+                battle spells, and game mechanics.
+
+            </p>
+
+            <a href="#main" class="btn">
+
+                Explore the Wiki
+
+            </a>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <section id="main">
+
+        <h2 class="section-title">
+
+            Explore the Wiki
+
+        </h2>
+
+        <div class="container">
+
+            <!-- LEFT -->
+
+            <div class="menu">
+
+                <div class="card" data-page="roles">
+
+                    <h3>Roles</h3>
+
+                    <p>Learn every lane and responsibility.</p>
+
+                </div>
+
+                <div class="card" data-page="heroes">
+
+                    <h3>Heroes</h3>
+
+                    <p>Browse every MLBB hero.</p>
+
+                </div>
+
+                <div class="card" data-page="items">
+
+                    <h3>Items</h3>
+
+                    <p>Build the perfect equipment.</p>
+
+                </div>
+
+                <div class="card" data-page="emblems">
+
+                    <h3>Emblems</h3>
+
+                    <p>Find the best emblem setup.</p>
+
+                </div>
+
+                <div class="card" data-page="spells">
+
+                    <h3>Battle Spells</h3>
+
+                    <p>Choose the right spell.</p>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="preview">
+
+                <img id="previewImage" src="images/homepage/default.jpg">
+
+                <h1 id="previewTitle">
+
+                    Welcome!
+
+                </h1>
+
+                <p id="previewDescription">
+
+                    Hover over one of the categories to see a preview.
+
+                </p>
+
+                <div class="featured">
+
+                    <h3>
+
+                        What you'll learn
+
+                    </h3>
+
+                    <p id="featuredText">
+
+                        Choose a category.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        if (localStorage.getItem("loggedIn") !== "true") {
+
+            window.location.href = "login.html";
+
+        }
+
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

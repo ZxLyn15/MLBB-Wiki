@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MLBB Wiki | Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= BACKGROUND ================= -->
+
+    <div class="background"></div>
+
+    <!-- ================= LOGIN CARD ================= -->
+
+    <div class="login-card">
+
+        <img src="images/homepage/mlbb_logo.jpg" class="logo" alt="MLBB Logo">
+
+        <p class="subtitle">
+            Knowledge is the greatest weapon.
+        </p>
+
+        <!-- Username -->
+
+        <div class="input-box">
+
+            <span class="material-symbols-outlined">
+                person
+            </span>
+
+            <input type="text" id="username" placeholder="Username">
+
+        </div>
+
+        <!-- Password -->
+
+        <div class="input-box">
+
+            <span class="material-symbols-outlined">
+                lock
+            </span>
+
+            <input type="password" id="password" placeholder="Password">
+
+            <span class="material-symbols-outlined toggle-password" onclick="togglePassword()">
+
+                visibility
+
+            </span>
+
+        </div>
+
+        <!-- Options -->
+
+        <div class="options">
+
+            <label>
+
+                <input type="checkbox">
+
+                Remember Me
+
+            </label>
+
+            <a href="#">Forgot Password?</a>
+
+        </div>
+
+        <!-- Login -->
+
+        <button onclick="login()">
+
+            LOGIN
+
+        </button>
+
+        <p id="message"></p>
+
+        <div class="register">
+
+            Don't have an account?
+
+            <a href="#">Register</a>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

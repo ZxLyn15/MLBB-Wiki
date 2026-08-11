@@ -16,18 +16,100 @@ body{
     color:white;
 }
 
+/* ================= NAVIGATION ================= */
+
+.top-nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:2000;
+
+    background:#1b1b1b;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 60px;
+
+    border-bottom:1px solid rgba(255,215,0,.15);
+
+    box-shadow:0 2px 8px rgba(0,0,0,.35);
+
+}
+
+.nav-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+.nav-right{
+
+    margin-left:auto;
+
+}
+
+.top-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    padding-bottom:6px;
+
+    transition:.25s;
+
+}
+
+.top-nav a:hover{
+
+    color:gold;
+
+    transform:translateY(-2px);
+
+}
+
+.top-nav a.active{
+
+    color:gold;
+
+    font-weight:bold;
+
+    border-bottom:3px solid gold;
+
+}
+
 /* ================= HERO ================= */
 
 .hero{
 
     height:100vh;
 
-    background:url("../images/roles/banner.jpg");
-
     background-size:cover;
 
     background-position:center;
 
+}
+
+.logo{
+    width:500px;
+
+    max-width:90%;
+    
+    display:block;
+
+    margin-bottom:30px;
 }
 
 .overlay{
@@ -109,6 +191,18 @@ body{
 
     margin:0 8px;
 
+}
+
+.breadcrumb-arrow{
+    font-size: 16px;
+    color: #888;
+    vertical-align: middle;
+    margin: 0 8px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24;
 }
 
 /* ================= BUTTON ================= */
@@ -340,5 +434,31 @@ body{
     line-height:1.8;
 
     font-size:18px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:900px){
+
+    .top-nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:18px;
+
+    }
+
+    .nav-left{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
 
 }
