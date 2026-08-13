@@ -1,72 +1,72 @@
 const pages = {
 
-    roles:{
+    roles: {
 
-        title:"Roles",
+        title: "Roles",
 
-        description:"Learn about the five roles in Mobile Legends and understand their responsibilities during a match.",
+        description: "Learn about the five roles in Mobile Legends and understand their responsibilities during a match.",
 
-        image:"images/homepage/roles.jpg",
+        image: "images/homepage/roles.jpg",
 
-        featured:"✓ Jungle\n✓ Mid Lane\n✓ Gold Lane\n✓ EXP Lane\n✓ Roam",
+        featured: "✓ Jungle\n✓ Mid Lane\n✓ Gold Lane\n✓ EXP Lane\n✓ Roam",
 
-        link:"Mainpage/roles.html"
-
-    },
-
-    heroes:{
-
-        title:"Heroes",
-
-        description:"Browse every hero from every class including their skills and recommended builds.",
-
-        image:"images/homepage/heroes.jpg",
-
-        featured:"✓ Hero Classes\n✓ Skills\n✓ Builds\n✓ Counters\n",
-
-        link:"Mainpage/heroes.html"
+        link: "Mainpage/roles.html"
 
     },
 
-    items:{
+    heroes: {
 
-        title:"Items",
+        title: "Heroes",
 
-        description:"Find every physical, magic, defense, movement, and jungle item.",
+        description: "Browse every hero from every class including their skills and recommended builds.",
 
-        image:"images/homepage/items.jpg",
+        image: "images/homepage/heroes.jpg",
 
-        featured:"✓ Physical Items\n✓ Magic Items\n✓ Defense Items\n✓ Movement Items",
+        featured: "✓ Hero Classes\n✓ Skills\n✓ Builds\n✓ Counters\n",
 
-        link:"Mainpage/items.html"
-
-    },
-
-    emblems:{
-
-        title:"Emblems",
-
-        description:"Discover the best emblem setups for every hero and role.",
-
-        image:"images/homepage/emblems.jpg",
-
-        featured:"✓ Emblem Types\n✓ Talents\n✓ Recommended Setups\n✓ Role Synergies",
-
-        link:"Mainpage/emblems.html"
+        link: "Mainpage/heroes.html"
 
     },
 
-    spells:{
+    items: {
 
-        title:"Battle Spells",
+        title: "Items",
 
-        description:"Learn which battle spell fits every hero and every situation.",
+        description: "Find every physical, magic, defense, movement, and jungle item.",
 
-        image:"images/homepage/spells.jpg",
+        image: "images/homepage/items.jpg",
 
-        featured:"✓ Spell Effects\n✓ Cooldowns\n✓ Best Uses\n✓ Spell Mechanics",
+        featured: "✓ Physical Items\n✓ Magic Items\n✓ Defense Items\n✓ Movement Items",
 
-        link:"Mainpage/battlespells.html"
+        link: "Mainpage/items.html"
+
+    },
+
+    emblems: {
+
+        title: "Emblems",
+
+        description: "Discover the best emblem setups for every hero and role.",
+
+        image: "images/homepage/emblems.jpg",
+
+        featured: "✓ Emblem Types\n✓ Talents\n✓ Recommended Setups\n✓ Role Synergies",
+
+        link: "Mainpage/emblems.html"
+
+    },
+
+    spells: {
+
+        title: "Battle Spells",
+
+        description: "Learn which battle spell fits every hero and every situation.",
+
+        image: "images/homepage/spells2.jpg",
+
+        featured: "✓ Spell Effects\n✓ Cooldowns\n✓ Best Uses\n✓ Spell Mechanics",
+
+        link: "Mainpage/battlespells.html"
 
     },
 
@@ -78,13 +78,12 @@ const title = document.getElementById("previewTitle");
 const description = document.getElementById("previewDescription");
 const image = document.getElementById("previewImage");
 const featured = document.getElementById("featuredText");
-const button = document.getElementById("learnMore");
 
 let currentPage = "";
 
-cards.forEach(card=>{
+cards.forEach(card => {
 
-    card.addEventListener("mouseenter",()=>{
+    card.addEventListener("mouseenter", () => {
 
         currentPage = card.dataset.page;
 
@@ -97,21 +96,11 @@ cards.forEach(card=>{
 
     });
 
-    card.addEventListener("click",()=>{
+    card.addEventListener("click", () => {
 
         window.location.href = pages[card.dataset.page].link;
 
     });
-
-});
-
-button.addEventListener("click",()=>{
-
-    if(currentPage !== ""){
-
-        window.location.href = pages[currentPage].link;
-
-    }
 
 });
 
@@ -122,13 +111,5 @@ function logout() {
     localStorage.removeItem("loggedIn");
 
     window.location.href = "login.html";
-
-}
-
-function logout(){
-
-    localStorage.removeItem("loggedIn");
-
-    window.location.href="../login.html";
 
 }

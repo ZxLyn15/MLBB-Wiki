@@ -96,6 +96,8 @@ body{
 
     height:100vh;
 
+    background-image:url("../images/homepage/background.jpg");
+
     background-size:cover;
 
     background-position:top;
