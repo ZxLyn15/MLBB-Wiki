@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Heroes </title>
 
-    <link rel="stylesheet" href="../css/comingsoon.css">
+    <title>MLBB Wiki | Heroes</title>
+
+    <link rel="stylesheet" href="../css/heroes.css">
+
 </head>
 
 <body>
+
+    <!-- ================= NAVIGATION ================= -->
 
     <nav class="top-nav">
 
         <div class="nav-left">
 
             <a href="../index.html">Home</a>
-
             <a href="roles.html">Roles</a>
-
             <a href="heroes.html" class="active">Heroes</a>
-
             <a href="items.html">Items</a>
-
             <a href="emblems.html">Emblems</a>
-
             <a href="battlespells.html">Battle Spells</a>
 
         </div>
@@ -37,24 +37,127 @@
 
     </nav>
 
-    <section class="coming-page">
 
-        <img src="../images/homepage/mlbb_logo.jpg" class="logo">
+    <!-- ================= HERO BANNER ================= -->
 
-        <h1>Coming Soon</h1>
+    <section class="hero">
 
-        <p>
-            This section of the MLBB Wiki is currently under development.
-            More heroes, items, and detailed guides will be added in future updates.
-        </p>
+        <div class="overlay">
 
-        <a href="../index.html" class="home-btn">
-            ← Back to Home
-        </a>
+            <img src="../images/homepage/mlbb_logo.jpg" alt="MLBB Logo" class="logo">
+
+            <h1>HEROES</h1>
+
+            <p>
+                Explore the heroes of Mobile Legends, their classes,
+                specialties, statistics, and abilities.
+            </p>
+
+            <a href="#main" class="btn">
+                Explore Heroes
+            </a>
+
+        </div>
 
     </section>
 
-    <script src="../js/auth.js"></script>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <nav class="breadcrumb">
+
+        <a href="../index.html">Home</a>
+
+        <span>/</span>
+
+        <span>Heroes</span>
+
+    </nav>
+
+
+    <!-- ================= OVERVIEW ================= -->
+
+    <section class="overview">
+
+        <h2>Overview</h2>
+
+        <p>
+            Heroes are playable characters in Mobile Legends.
+            Each hero has unique attributes, abilities, classes,
+            and specialties that determine their role during a match.
+        </p>
+
+    </section>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section" id="main">
+
+        <h2>Heroes</h2>
+
+
+        <!-- ================= CLASS TABS ================= -->
+
+        <div class="class-tabs">
+
+            <button class="class-tab active" data-class="all">
+                All
+            </button>
+
+            <button class="class-tab" data-class="tank">
+                Tank
+            </button>
+
+            <button class="class-tab" data-class="fighter">
+                Fighter
+            </button>
+
+            <button class="class-tab" data-class="assassin">
+                Assassin
+            </button>
+
+            <button class="class-tab" data-class="mage">
+                Mage
+            </button>
+
+            <button class="class-tab" data-class="marksman">
+                Marksman
+            </button>
+
+            <button class="class-tab" data-class="support">
+                Support
+            </button>
+
+        </div>
+
+
+        <!-- ================= HERO GRID ================= -->
+
+        <div id="hero-grid" class="hero-grid"></div>
+
+    </section>
+
+    <!-- ================= HERO MODAL ================= -->
+
+    <div id="hero-modal" class="hero-modal">
+
+        <div class="modal-card">
+
+            <div class="modal-background"></div>
+
+            <button id="close-modal" class="close-modal">
+                &times;
+            </button>
+
+            <div id="modal-content"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/heroes.js"></script>
 
 </body>
 

@@ -1,0 +1,1217 @@
+/* ================= GLOBAL ================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: #121212;
+
+    color: white;
+
+    line-height: 1.7;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.top-nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 2000;
+
+    background: #1b1b1b;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 60px;
+
+    border-bottom:
+        1px solid rgba(255, 215, 0, .15);
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, .35);
+}
+
+.nav-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.nav-right {
+
+    margin-left: auto;
+}
+
+.top-nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    padding-bottom: 6px;
+
+    transition: .25s;
+}
+
+.top-nav a:hover {
+
+    color: gold;
+
+    transform: translateY(-2px);
+}
+
+.top-nav a.active {
+
+    color: gold;
+
+    font-weight: bold;
+
+    border-bottom: 3px solid gold;
+}
+
+
+/* ================= HERO BANNER ================= */
+
+.hero {
+
+    height: 100vh;
+
+    background-image:
+        url("../images/homepage/background.jpg");
+
+    background-size: cover;
+
+    background-position: top;
+
+    padding: 0;
+}
+
+.overlay {
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .75);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.logo {
+
+    width: 20%;
+
+    max-width: 100%;
+
+    display: block;
+
+    margin-bottom: 30px;
+}
+
+.overlay h1 {
+
+    font-size: 70px;
+
+    color: gold;
+
+    margin-bottom: 20px;
+}
+
+.overlay p {
+
+    max-width: 750px;
+
+    font-size: 18px;
+}
+
+
+/* ================= BREADCRUMB ================= */
+
+.breadcrumb {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: #1b1b1b;
+
+    padding: 18px 80px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, .4);
+}
+
+.breadcrumb a {
+
+    color: gold;
+
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+
+    margin: 0 8px;
+
+    color: #aaa;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+
+    margin-top: 40px;
+
+    padding: 15px 40px;
+
+    background: gold;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: transform .3s;
+}
+
+.btn:hover {
+
+    transform: scale(1.05);
+}
+
+
+/* ================= COMMON ================= */
+
+section {
+
+    padding: 60px 80px;
+}
+
+section h2 {
+
+    color: gold;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= OVERVIEW ================= */
+
+.overview p {
+
+    max-width: 950px;
+
+    font-size: 18px;
+
+    color: #d5d5d5;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+
+    padding-top: 20px;
+}
+
+
+/* ================= CLASS TABS ================= */
+
+.class-tabs {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.class-tab {
+
+    background: #202020;
+
+    border: none;
+
+    border-radius: 12px;
+
+    color: white;
+
+    cursor: pointer;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+
+    transition: .3s;
+}
+
+.class-tab:hover {
+
+    background: #2d2d2d;
+
+    transform: translateY(-3px);
+}
+
+.class-tab.active {
+
+    background: #2b2b2b;
+
+    color: gold;
+
+    border: 1px solid gold;
+}
+
+
+/* ================= HERO GRID ================= */
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(190px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* ================= HERO CARD ================= */
+
+.hero-card {
+
+    background: #202020;
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    border: 1px solid transparent;
+
+    transition: .3s;
+}
+
+.hero-card:hover {
+
+    transform: translateY(-7px);
+
+    background: #292929;
+
+    border-color:
+        rgba(255, 215, 0, .5);
+}
+
+.hero-card img {
+
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 12px;
+}
+
+.hero-card h3 {
+
+    color: gold;
+
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+.hero-class {
+
+    color: #ddd;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+}
+
+.hero-specialty {
+
+    color: #888;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+.hero-title {
+    width: 100%;
+    display: block;
+
+    font-size: 13px;
+    font-style: italic;
+    color: #c9a45c;
+
+    margin: 3px 0 6px;
+
+    text-align: center;
+}
+
+/* ================= MODAL ================= */
+
+.hero-modal {
+
+    display: none;
+
+    position: fixed;
+
+    text-align: center;
+
+    inset: 0;
+
+    z-index: 5000;
+
+    padding: 30px;
+
+    overflow-y: auto;
+
+    background: rgba(0, 0, 0, .8);
+}
+
+.hero-modal.show {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+/* ================= MODAL CARD ================= */
+
+.modal-card {
+
+    position: relative;
+
+    background: #202020;
+
+    border: 1px solid rgba(255, 215, 0, .3);
+
+    border-radius: 20px;
+
+    width: 900px;
+    max-width: 100%;
+
+    margin: 20px auto;
+
+    padding: 45px;
+
+    overflow: hidden;
+
+    animation: modalFade .3s ease;
+}
+
+
+.modal-background {
+    width: 100%;
+
+    height: 150rem;   
+
+    object-fit: cover; 
+
+    position: absolute;
+
+    inset: 0;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    opacity: .10;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+#modal-content {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.close-modal {
+
+    z-index: 2;
+}
+
+@keyframes modalFade {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+/* ================= HERO PRICE ================= */
+
+.hero-price {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    background: #181818;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    margin-bottom: 25px;
+}
+
+.hero-price .price-box {
+
+    text-align: center;
+
+    border-right: 1px solid #333;
+}
+
+.hero-price .price-box:last-child {
+
+    border-right: none;
+}
+
+.hero-price .price-box h4 {
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+}
+
+.hero-price .price-box p {
+
+    color: gold;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.hero-price .price-box p img {
+
+    width: 22px;
+
+    height: 22px;
+
+    object-fit: contain;
+}
+
+/* ================= CLOSE BUTTON ================= */
+
+.close-modal {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2d2d2d;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.close-modal:hover {
+
+    background: #444;
+
+    color: gold;
+}
+
+
+/* ================= HERO HEADER ================= */
+
+.modal-icon {
+
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+.modal-title {
+
+    text-align: center;
+
+    color: gold;
+
+    font-size: 38px;
+
+    margin-bottom: 5px;
+}
+
+.modal-class {
+
+    text-align: center;
+
+    color: #ddd;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+.modal-specialty {
+
+    text-align: center;
+
+    color: #888;
+
+    margin-bottom: 35px;
+}
+
+/* ================= SKILL TYPE ================= */
+
+.skill-type-tags {
+    display: flex;
+
+    justify-content: left;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 6px;
+}
+
+.skill-type-tag {
+    display: inline-block;
+
+    padding: 3px 9px;
+
+    border-radius: 8px;
+
+    background: #2b2b2b;
+
+    border: 1px solid rgba(255, 215, 0, .3);
+
+    color: gold;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+/* ================= SECTION TITLES ================= */
+
+.hero-modal-section {
+
+    margin-top: 30px;
+}
+
+.hero-modal-section h3 {
+
+    color: gold;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+}
+
+.stat-box {
+
+    background: #2b2b2b;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    text-align: center;
+}
+
+.stat-box h4 {
+
+    color: #ccc;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+
+    color: gold;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+
+/* ================= SKILL SELECTOR ================= */
+
+.skill-selector {
+
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow-x: auto;
+
+    padding: 5px 3px 15px;
+
+    scrollbar-width: thin;
+}
+
+.skill-selector::-webkit-scrollbar {
+
+    height: 6px;
+}
+
+.skill-selector::-webkit-scrollbar-track {
+
+    background: #181818;
+
+    border-radius: 10px;
+}
+
+.skill-selector::-webkit-scrollbar-thumb {
+
+    background: #444;
+
+    border-radius: 10px;
+}
+
+.skill-tab {
+
+    flex: 0 0 120px;
+
+    min-height: 120px;
+
+    background: #2b2b2b;
+
+    border: 1px solid transparent;
+
+    border-radius: 15px;
+
+    color: white;
+
+    cursor: pointer;
+
+    padding: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    transition: .3s;
+}
+
+.skill-tab:hover {
+
+    background: #343434;
+
+    transform: translateY(-4px);
+}
+
+.skill-tab.active {
+
+    border-color: gold;
+
+    color: gold;
+
+    background: #303030;
+}
+
+.skill-tab img {
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.skill-tab span {
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* ================= SKILL DETAILS ================= */
+
+.skill-details {
+
+    background: #181818;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    margin-top: 20px;
+
+    animation: skillFade .25s ease;
+}
+
+@keyframes skillFade {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(10px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+.skill-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.skill-header img {
+
+    width: 85px;
+
+    height: 85px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.skill-header h4 {
+
+    color: gold;
+
+    font-size: 24px;
+}
+
+.skill-type {
+
+    color: #999;
+
+    text-align: left;
+
+    font-size: 13px;
+}
+
+.skill-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+    
+}
+
+.skill-info-box {
+
+    background: #2b2b2b;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    text-align: center;
+    
+}
+
+.skill-info-box h5 {
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+.skill-info-box p {
+
+    color: gold;
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+.skill-description {
+
+    color: #d5d5d5;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+
+    text-align: justify;
+}
+
+
+/* ================= SCALING ================= */
+
+.scaling-title {
+
+    color: gold;
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+.scaling-table-wrapper {
+
+    overflow-x: auto;
+}
+
+.scaling-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 500px;
+}
+
+.scaling-table th,
+.scaling-table td {
+
+    padding: 10px;
+
+    border: 1px solid #3a3a3a;
+
+    text-align: center;
+}
+
+.scaling-table th {
+
+    background: #2b2b2b;
+
+    color: gold;
+
+    font-size: 13px;
+}
+
+.scaling-table td {
+
+    color: #ddd;
+
+    font-size: 13px;
+}
+
+.scaling-table td:first-child {
+
+    color: white;
+
+    font-weight: bold;
+
+    text-align: left;
+}
+
+
+/* ================= RELEASE DATE ================= */
+
+.release-date {
+
+    text-align: center;
+
+    color: #aaa;
+
+    margin-top: 35px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #333;
+}
+
+.release-date span {
+
+    color: gold;
+
+    font-weight: bold;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 900px) {
+
+    .top-nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px;
+    }
+
+    .nav-left {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    section {
+
+        padding: 50px 25px;
+    }
+
+    .overlay h1 {
+
+        font-size: 50px;
+    }
+
+    .breadcrumb {
+
+        padding: 15px 25px;
+    }
+
+    .modal-card {
+
+        padding: 35px 25px;
+    }
+
+    .skill-tab {
+
+        flex-basis: 105px;
+
+        min-height: 110px;
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .hero-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .class-tabs {
+
+        justify-content: center;
+    }
+
+    .hero-card {
+
+        padding: 12px;
+    }
+
+    .hero-card img {
+
+        width: 90px;
+
+        height: 90px;
+    }
+
+    .modal-title {
+
+        font-size: 28px;
+    }
+
+    .modal-icon {
+
+        width: 110px;
+
+        height: 110px;
+    }
+
+    .skill-info {
+
+        grid-template-columns: 1fr;
+    }
+
+    .skill-header {
+
+        align-items: flex-start;
+    }
+
+    .skill-header img {
+
+        width: 70px;
+
+        height: 70px;
+    }
+
+    .skill-header h4 {
+
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .hero-price {
+        grid-template-columns: 1fr;
+    }
+
+    .price-box {
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding-bottom: 12px;
+    }
+
+    .price-box:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+}
