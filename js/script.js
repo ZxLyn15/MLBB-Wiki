@@ -20,7 +20,7 @@ const pages = {
 
         description: "Browse every hero from every class including their skills and recommended builds.",
 
-        image: "images/homepage/heroes.jpg",
+        image: "images/homepage/heroes.png",
 
         featured: "✓ Hero Classes\n✓ Skills\n✓ Price\n✓ Descriptions\n✓ Specialties\n ",
 
