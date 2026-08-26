@@ -22,7 +22,7 @@ const pages = {
 
         image: "images/homepage/heroes.jpg",
 
-        featured: "✓ Hero Classes\n✓ Skills\n✓ Builds\n✓ Counters\n",
+        featured: "✓ Hero Classes\n✓ Skills\n✓ Price\n✓ Descriptions\n✓ Specialties\n ",
 
         link: "Mainpage/heroes.html"
 
@@ -36,7 +36,7 @@ const pages = {
 
         image: "images/homepage/items.jpg",
 
-        featured: "✓ Physical Items\n✓ Magic Items\n✓ Defense Items\n✓ Movement Items",
+        featured: "✓ Physical Items\n✓ Magic Items\n✓ Defense Items\n✓ Movement Items\n✓ Roam & Jungle Items\n",
 
         link: "Mainpage/items.html"
 
@@ -50,7 +50,7 @@ const pages = {
 
         image: "images/homepage/emblems.jpg",
 
-        featured: "✓ Emblem Types\n✓ Talents\n✓ Recommended Setups\n✓ Role Synergies",
+        featured: "✓ Emblem Types\n✓ Talents\n✓ Recommended Setups\n✓ Role Synergies\n✓ Emblem Descriptions\n",
 
         link: "Mainpage/emblems.html"
 
@@ -64,7 +64,7 @@ const pages = {
 
         image: "images/homepage/spells2.jpg",
 
-        featured: "✓ Spell Effects\n✓ Cooldowns\n✓ Best Uses\n✓ Spell Mechanics",
+        featured: "✓ Spell Effects\n✓ Cooldowns\n✓ Best Uses\n✓ Spell Mechanics\n✓ Spell Descriptions\n",
 
         link: "Mainpage/battlespells.html"
 

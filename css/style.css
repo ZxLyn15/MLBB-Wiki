@@ -34,11 +34,13 @@ body{
 
     padding:14px 60px;
 
-    box-shadow:0 2px 8px rgba(0,0,0,.4);
+    border-bottom:1px solid rgba(255,215,0,.15);
+
+    box-shadow:0 2px 8px rgba(0,0,0,.35);
 
 }
 
-.nav-left {
+.nav-left{
 
     display:flex;
 
@@ -48,13 +50,13 @@ body{
 
 }
 
-.nav-right {
+.nav-right{
 
     margin-left:auto;
 
 }
 
-.top-nav a {
+.top-nav a{
 
     color:white;
 
@@ -62,9 +64,9 @@ body{
 
     font-size:16px;
 
-    transition:.3s;
-
     padding-bottom:6px;
+
+    transition:.25s;
 
 }
 
@@ -72,13 +74,17 @@ body{
 
     color:gold;
 
+    transform:translateY(-2px);
+
 }
 
 .top-nav a.active{
 
     color:gold;
 
-    border-bottom:2px solid gold;
+    font-weight:bold;
+
+    border-bottom:3px solid gold;
 
 }
 
@@ -115,7 +121,7 @@ body{
 
 .overlay img{
 
-    width:30%;
+    width:40%;
 
     margin-bottom:20px;
 
