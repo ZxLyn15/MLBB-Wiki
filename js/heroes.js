@@ -49,13 +49,13 @@ import { gatotkaca } from "./heroes/gatotkaca.js";
 import { harley } from "./heroes/harley.js";
 import { irithel } from "./heroes/irithel.js";
 import { grock } from "./heroes/grock.js";
-/*
 import { argus } from "./heroes/argus.js";
 import { odette } from "./heroes/odette.js";
 import { lancelot } from "./heroes/lancelot.js";
 import { diggie } from "./heroes/diggie.js";
 import { hylos } from "./heroes/hylos.js";
 import { zhask } from "./heroes/zhask.js";
+/*
 import { helcurt } from "./heroes/helcurt.js";
 import { pharsa } from "./heroes/pharsa.js";
 import { lesley } from "./heroes/lesley.js";
@@ -189,13 +189,13 @@ const heroes = [
     harley,
     irithel,
     grock,
-    /*
     argus,
     odette,
     lancelot,
     diggie,
     hylos,
     zhask,
+    /*
     helcurt,
     pharsa,
     lesley,
